@@ -50,7 +50,7 @@ class Test{{ cookiecutter.project_slug|title }}(object):
     @classmethod
     def teardown_class(cls):
         pass
-{% else %}
+{%- else -%}
 class Test{{ cookiecutter.project_slug|title }}(unittest.TestCase):
 
     def setUp(self):
